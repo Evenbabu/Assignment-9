@@ -16,6 +16,7 @@ background-size: cover;
 color: rgb(6, 6, 12);
 width: 100vw;
 height: 80vh;
+clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
 }
 .logo{
   color:blueviolet;
@@ -58,18 +59,4 @@ height: 80vh;
   100% {
     transform: translateX(-100%); /* End at the left edge */
   }
-}
-
-.nav_link{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  width: 100%;
-  height: 80px;
-  background-color: rgb(30, 2, 56);
-  list-style-type: none;
-}
-.nav_link li a{
-  color: #fefefe;
 }

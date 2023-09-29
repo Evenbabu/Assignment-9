@@ -1,0 +1,8 @@
+.quiz_detail{
+    background: rgb(87, 3, 87);
+    /* width: 500px; */
+}
+.quiz_img{
+    border: 2px solid #fff;
+    border-radius: 10px;
+}

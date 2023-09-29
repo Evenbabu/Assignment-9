@@ -1,16 +1,14 @@
 import React from 'react';
-import Header from '../componetns/Header/Header';
-import { Outlet } from 'react-router-dom';
 import NavBar from '../componetns/NavBar/NavBar';
+import { Outlet } from 'react-router-dom';
 
-const Main = () => {
+const NavLink = () => {
     return (
         <div>
-            <Header></Header>
             <NavBar></NavBar>
             <Outlet></Outlet>
         </div>
     );
 };
 
-export default Main;
+export default NavLink;
