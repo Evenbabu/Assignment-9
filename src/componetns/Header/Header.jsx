@@ -35,6 +35,15 @@ const Header = () => {
                 </div>
                 </div>
             </div>
+            <nav>
+                <ul className='nav_link'>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">Quiz</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contect Us</a></li>
+
+                </ul>
+            </nav>
         </div>
     );
 };
