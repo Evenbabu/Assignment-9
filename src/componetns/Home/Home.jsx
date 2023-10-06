@@ -9,6 +9,10 @@ const Home = () => {
 
     // console.log(data);
 
+    const getQuiz = itemId=>{
+        console.log(itemId)
+    }
+
     return (
         <div>
             <div className='quiz_item'>
@@ -16,6 +20,7 @@ const Home = () => {
                 data.map(item => (<QuizSection 
                     key={item.id}
                      item={item}
+                     getQuiz={getQuiz}
                      ></QuizSection>))                   
             }
             </div>

@@ -1,0 +1,37 @@
+.quiz_detail_container{
+    border: 2px solid;
+    list-style-type: none;
+    margin: 100px;
+    padding: 50px;
+}
+
+.quiz_option{
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+.quiz_list{
+   color: black;
+   border: 2px solid;
+   padding: 20px;
+}
+.disable{
+    display: none;
+}
+
+.modal{ 
+   
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #fefefe;
+    color: black;
+    
+   
+
+}
