@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Modal.css'
-import ModalDetail from '../ModalDetail/ModalDetail';
+
 
 const Modal = ({option, handalOptionSelect}) => {
     

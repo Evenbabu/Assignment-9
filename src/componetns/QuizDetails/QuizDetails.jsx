@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import{Link} from 'react-router-dom';
 import './QuizDetails.css'
 import Modal from '../Modal/Modal';
-import ModalDetail from '../ModalDetail/ModalDetail';
 
 const QuizDetails = ({quiz}) => {
     const [modal,setModal] = useState(true);

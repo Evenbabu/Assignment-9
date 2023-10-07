@@ -16,6 +16,9 @@ const NavBar = () => {
         <NavLink to={'/quiz'} className={({ isActive, isPending }) =>
           isActive ? "active" : isPending ? "" : "pending"
         }>Quiz</NavLink>
+        <NavLink to={'/statistics'} className={({ isActive, isPending }) =>
+         isActive ? "active" : isPending ? "" : "pending"
+        }>Statistics</NavLink>
 
         <NavLink to={'/about'} className={({ isActive, isPending }) =>
           isActive ? "active" : isPending ? "" : "pending"
@@ -29,6 +32,7 @@ const NavBar = () => {
         <NavLink to={'/blog'} className={({ isActive, isPending }) =>
           isActive ? "active" : isPending ? "" : "pending"
         }>Blog</NavLink>
+
 
                 </ul>
 

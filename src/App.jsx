@@ -1,6 +1,4 @@
-import React, { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React, {  } from 'react'
 
 import './App.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
@@ -13,6 +11,7 @@ import About from './componetns/About/About'
 import NavLink from './Layout/NavLink'
 import Blog from './componetns/Blog/Blog'
 import Modal from './componetns/Modal/Modal'
+import Statistics from './componetns/Statistics/statistics'
 
 function App() {
 const router = createBrowserRouter([
@@ -37,9 +36,16 @@ const router = createBrowserRouter([
   },
   element:<Quiz></Quiz>},
   {path:'/modal',element:<Modal></Modal>},
+  {path:'/statistics',
+  loader:async()=>{
+    const data = fetch('https://openapi.programming-hero.com/api/quiz')
+    return data;
+  },
+   element: <Statistics></Statistics>},
   {path:'/contact', element:<ContactUs></ContactUs>},
   {path:'/about', element:<About></About>},
-  {path:'/blog', element:<Blog></Blog>}
+  {path:'/blog', element:<Blog></Blog>},
+
 ]}
   // {path:'/', element:<Header></Header>}
 ])
