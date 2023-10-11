@@ -2,6 +2,12 @@
   background-color: lightgreen;
   position: relative;
 }
+
+.bars{
+  display: none;
+  font-size: 30px;
+}
+
 .nav_link{
     display: flex;
     justify-content: center;
@@ -23,4 +29,53 @@
   .pending {
     color: #fefefe
   }
+
+  @media (width <= 600px){
+    .bars{
+      display: block;
+      position: absolute;
+      margin: 10px;
+      right: 0;
+      
+
+    }
+
+    .nav{
+      background: none;
   
+    
+    }
+    
+    .nav_link{
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content:start;
+      align-items: normal;
+      width: 150px;
+      height: 100vh;
+      padding: 10px;
+      gap: 10px;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+      left: -200px;
+      transition: left 0.3s ease-in;
+    }
+    
+
+    .active-bar{
+     left: 0;
+    
+    }
+    
+
+    
+  }
+  
+
+  
+@media (601px <= width <= 990px){
+  .nav_link{
+  justify-content: end;
+padding-right: 10px;
+  }
+}

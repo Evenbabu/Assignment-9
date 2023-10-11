@@ -1,0 +1,16 @@
+.test_div{
+    background: red;
+    width: 500px;
+    height: 500px;
+}
+
+@media (width <= 600px){
+    .test_div{
+        background: gray;
+    }
+}
+@media  (601px <= width <= 768px){
+    .test_div{
+        background: green;
+    }
+}

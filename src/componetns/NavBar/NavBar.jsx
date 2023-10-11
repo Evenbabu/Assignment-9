@@ -1,21 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom';
 import './NavBar.css'
 
 const NavBar = () => {
+const [bar , setBar] = useState(false)
+const handalBar = () =>{
+
+  setBar(!bar)
+}
+
+console.log(bar)
     return (
         <div>
              <nav className='nav'> 
-
-                <ul className='nav_link'>
+             
+              <FontAwesomeIcon onClick={()=>handalBar()}  className='bars' icon={faBars}></FontAwesomeIcon>
+                <ul className={`nav_link ${bar ? 'active-bar' : 'disable-bar'}`}>
 
                     <NavLink to={'/'} className={({ isActive, isPending }) =>
           isActive ? "active" : isPending ? "" : "pending"
         }>Home</NavLink>
 
-        <NavLink to={'/quiz'} className={({ isActive, isPending }) =>
-          isActive ? "active" : isPending ? "" : "pending"
-        }>Quiz</NavLink>
+        
         <NavLink to={'/statistics'} className={({ isActive, isPending }) =>
          isActive ? "active" : isPending ? "" : "pending"
         }>Statistics</NavLink>

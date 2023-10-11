@@ -9,14 +9,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
-background-color:rgb(32, 85, 87);
-background-image: url(./img/banner.jpg);
-background-size: cover;
-color: rgb(6, 6, 12);
-width: 100vw;
-height: 80vh;
-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  background-color:rgb(32, 85, 87);
+  background-image: url(./img/banner.jpg);
+  background-size: cover;
+  color: rgb(6, 6, 12);
+  width: 100vw;
+  height: 80vh;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
 }
 .logo{
   color:blueviolet;
@@ -52,11 +51,26 @@ clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
   margin-right: 20px; /* Adjust the spacing between images */
   animation: scroll 10s linear infinite;
 }
+
 @keyframes scroll {
   0% {
     transform: translateX(100%); /* Start from the right edge */
   }
   100% {
     transform: translateX(-100%); /* End at the left edge */
+  }
+}
+
+
+@media (width <= 600px){
+.banner{
+  display: none;;
+}
+
+}
+
+@media (601px <= width <= 990px){
+  .banner{
+    display: none;
   }
 }
