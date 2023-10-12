@@ -1,7 +1,7 @@
 .quiz_item{
     margin: auto;
     padding: 50px;
-    width: 80%;
+    /* width: 80%; */
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 50px;
@@ -11,3 +11,4 @@
     
     
 }
+

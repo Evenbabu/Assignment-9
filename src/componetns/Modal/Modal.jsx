@@ -15,7 +15,6 @@ const Modal = ({option, handalOptionSelect}) => {
                 type="radio"
                 name='chose_option'
                 value={option}
-                
                 onChange={()=>handalOptionSelect(option)}
 
                 />

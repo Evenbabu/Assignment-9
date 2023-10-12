@@ -33,7 +33,7 @@ const QuizDetails = ({quiz}) => {
     };
 
     return (
-        <div>
+        
             <div className='quiz_detail_container'>
             <p>
                 <b>Qusestion:</b> {question}
@@ -62,15 +62,13 @@ const QuizDetails = ({quiz}) => {
                   </div>
               }
               
-       
-
             </div>
             
                
 
             
             </div>
-        </div>
+        
     );
 };
 

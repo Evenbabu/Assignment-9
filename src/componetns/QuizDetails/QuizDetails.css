@@ -1,5 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .quiz_detail_container{
-    border: 2px solid;
+    border: 1px solid;
     list-style-type: none;
     margin: 100px;
     padding: 50px;
@@ -7,18 +12,16 @@
 
 .quiz_option{
     position: relative;
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     text-align: center;
-    margin: 20px;
+    margin-top: 20px;
 }
 
 .quiz_list{
    color: black;
    border: 2px solid;
-   padding: 20px;
 }
 .disable{
     display: none;
@@ -34,4 +37,10 @@
     
    
 
+}
+
+@media (width <= 600px){
+.quiz_detail_container{
+/* width: 80%; */
+}
 }
