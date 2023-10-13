@@ -11,7 +11,7 @@ const handalBar = () =>{
   setBar(!bar)
 }
 
-console.log(bar)
+// console.log(bar)
     return (
         <div>
              <nav className='nav'> 

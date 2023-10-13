@@ -1,0 +1,17 @@
+[
+    {
+      "id": "6528ea3573022a8f3a054984",
+      "qus": "what is purpose of react router ?",
+      "ans": "React Router is a FrameWork it's work React library. React Router helps manage routing and navigation in web page. React Routing providing smooth and responsive user experience. React Routing espacially use for build (SPA) single page aplication"
+    },
+    {
+      "id": "6528ea35b2655e91e75a8db9",
+      "qus": "How dose context api workes ?",
+      "ans": "React context API allows easily access data at different levels of ths component tree without passing prop to every level."
+    },
+    {
+      "id": "6528ea35392e164740743d70",
+      "qus": "What is useRef ?",
+      "ans": "UseRef is a hool in React that provides a way to create and manage a mutalble reference to a Dom. It can be used to store a mutable value that does not cause a re-render when update. it can be used to access a Dom element directly,"
+    }
+  ]

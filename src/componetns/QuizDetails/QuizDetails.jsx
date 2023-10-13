@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import{ FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faEye} from '@fortawesome/free-regular-svg-icons'
 import './QuizDetails.css'
 import Modal from '../Modal/Modal';
 
@@ -32,12 +34,17 @@ const QuizDetails = ({quiz}) => {
         }
     };
 
+    const getCorrectAnswer = (ans) =>{
+        // console.log('get Console',ans)
+        alert(`${ans}`)
+    }
+
     return (
         
             <div className='quiz_detail_container'>
-            <p>
-                <b>Qusestion:</b> {question}
-            </p>
+           <div className='qus-eye'>
+           <p className='qus'><b>Qusestion:</b> {question}</p>
+           <FontAwesomeIcon onClick={()=>getCorrectAnswer(correctAnswer)} icon={faEye} className='eye'/>           </div>
             <div className='quiz_option'>
                {
                 options.map((option, index)=><Modal 
