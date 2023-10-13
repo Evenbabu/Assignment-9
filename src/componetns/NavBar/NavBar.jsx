@@ -16,7 +16,10 @@ console.log(bar)
         <div>
              <nav className='nav'> 
              
+
               <FontAwesomeIcon onClick={()=>handalBar()}  className='bars' icon={faBars}></FontAwesomeIcon>
+             
+             
                 <ul className={`nav_link ${bar ? 'active-bar' : 'disable-bar'}`}>
 
                     <NavLink to={'/'} className={({ isActive, isPending }) =>

@@ -16,9 +16,14 @@ const Statistics = () => {
 
 
     return (
+        
+
         <div className='chart-container'>
 
-        <BarChart width={800} height={500} data={quizData} style={{border: '2px solid white', padding:''}} >
+            <ResponsiveContainer width="80%" height={500}> 
+
+
+        <BarChart   data={quizData} style={{border: '2px solid white', padding:''}} >
             <XAxis dataKey={"name"} tick={{fill:'white'}} ></XAxis>
             <YAxis tick={{fill:'white'}}></YAxis>
             <Tooltip></Tooltip>
@@ -26,7 +31,10 @@ const Statistics = () => {
             
             <Bar dataKey={"total"} fill='#FFCD4B' ></Bar>
         </BarChart>
+            </ResponsiveContainer>
+
         </div>
+        
             
         
         

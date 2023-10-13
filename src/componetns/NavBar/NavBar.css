@@ -1,6 +1,7 @@
 .nav{
   background-color: lightgreen;
-  position: relative;
+  /* position: relative; */
+
 }
 
 .bars{
@@ -9,6 +10,8 @@
 }
 
 .nav_link{
+  position: relative;
+  top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,11 +33,17 @@
     color: #fefefe
   }
 
+  .active-bar .nav_link {
+    transform: translateX(0);
+  }
+  
+
   @media (width <= 600px){
     .bars{
       display: block;
       position: absolute;
       margin: 10px;
+      top: 0;
       right: 0;
       
 
@@ -42,8 +51,6 @@
 
     .nav{
       background: none;
-  
-    
     }
     
     .nav_link{
@@ -64,6 +71,7 @@
 
     .active-bar{
      left: 0;
+     z-index: 1;
     
     }
     
