@@ -22,7 +22,7 @@ const Header = () => {
                         </div>
                     <div className='banner_text'>
                     <h1 className='text'>Multistep <span className='quiz'>Quiz</span> Form</h1>
-                    <p>Form is a pixel perfect multistep form. It was designed to promote your mobile App,<br /> services or business projects </p>
+                    <p>Are you a budding computer programmer? Take our 10-question quiz to see how much you know about the world of coding! <br /> services or business projects </p>
                     </div>
                     <button className='btn_ply'>Play Us</button>
 
