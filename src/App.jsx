@@ -12,6 +12,7 @@ import NavLink from './Layout/NavLink'
 import Blog from './componetns/Blog/Blog'
 import Modal from './componetns/Modal/Modal'
 import Statistics from './componetns/Statistics/statistics'
+import ErrorPage from './componetns/ErrorPage/ErrorPage'
 
 function App() {
 const router = createBrowserRouter([
@@ -49,11 +50,16 @@ const router = createBrowserRouter([
     const blogData = fetch('blogQus.json')
     return blogData;
   },
-   element:<Blog></Blog>},
+   element:<Blog></Blog>
+  },
+ 
 
 ]},
-  {path:'*',
-   element: <div>Error Page</div>}
+{
+  path:'*',
+ element: <ErrorPage></ErrorPage>
+}
+  
 ])
 
   return (
